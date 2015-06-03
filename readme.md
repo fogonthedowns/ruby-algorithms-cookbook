@@ -2,10 +2,10 @@
 
 Sorting algorithms
 
-1. [Quicksort](#Quicksort)
+1. [Quicksort](#quicksort)
 
 
-## Quicksort
+## quicksort
 The steps are:
   1. Pick an element, called a pivot, from the array.
   2. Reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.
