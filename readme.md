@@ -1,4 +1,4 @@
-Algorithms Cookbook
+Ruby Algorithms Cookbook
 ====================
 
 
