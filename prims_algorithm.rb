@@ -20,8 +20,8 @@ end
 class Prim
   attr_accessor :covered_nodes, :edges
   def initialize	  
- 	  @edges = [:A]
- 	  @covered_nodes = [:A]
+    @edges = [:A]
+    @covered_nodes = [:A]
     @graph = Graph.new
     @graph.add_vertex(:A, {:B => 7, :C => 8})
     @graph.add_vertex(:B, {:A => 7, :F => 2})
