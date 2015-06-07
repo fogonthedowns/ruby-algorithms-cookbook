@@ -4,6 +4,7 @@ Sorting algorithms
 
 1. [Quicksort](#quicksort)
 2. [Mergesort](#mergesort)
+3. [Prim's Algorithm](prims_algorithm.rb)
 
 
 ## quicksort
