@@ -1,5 +1,5 @@
 class Graph
-	attr_accessor :vertices, :covered_nodes
+  attr_accessor :vertices, :covered_nodes
   def initialize()
     @vertices = {}
     @covered_nodes = []
@@ -12,7 +12,7 @@ class Graph
   end
 
   def nodes
-  	@vertices.keys
+    @vertices.keys
   end
 end
 
@@ -35,15 +35,11 @@ class Prim
     
   def calculate
     while !nodes_left_to_visit.empty?
-      puts "."
       @covered_nodes.each do |key|
-        puts ".."
         array_of_node_connections_sorted_by_length = @graph.vertices[key].sort_by{|v|v.last}
         array_of_node_connections_sorted_by_length.each do |connection|
           break if nodes_left_to_visit.empty?
-
           recursive_find_near_function(connection)
-          
         end
       end
     end
@@ -51,14 +47,12 @@ class Prim
 
   def recursive_find_near_function(connection)
 
-
     return if nodes_left_to_visit.empty?
 
-    # cover it
+    # cover the node
     return if @covered_nodes.find_index(connection[0]) != nil
     @covered_nodes << connection[0]
     puts "path:#{@covered_nodes}"
-
 
     # find its connections
     connection_linked_to_others = @graph.vertices[connection[0]]
